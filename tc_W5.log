@@ -1,0 +1,19 @@
+
+LESR-PPO: state_dim=128, feature_dim=8
+    Ep 10/50: reward=-10.5346, sharpe=-0.720
+    Ep 20/50: reward=-3.7580, sharpe=-0.703
+    Ep 30/50: reward=1.4129, sharpe=-0.699
+    Ep 40/50: reward=4.3563, sharpe=-0.681
+    Ep 50/50: reward=6.7314, sharpe=-0.656
+LESR-PPO done: Sharpe=-0.656, Return=-14.78%
+
+Baseline-PPO
+  state_dim=70
+    Ep 10/50: reward=-1.3941, sharpe=-0.836
+    Ep 20/50: reward=-3.2181, sharpe=-0.793
+    Ep 30/50: reward=-3.0519, sharpe=-0.746
+    Ep 40/50: reward=-3.0201, sharpe=-0.708
+    Ep 50/50: reward=-8.3052, sharpe=-0.675
+Baseline done: Sharpe=-0.675, Return=-42.50%
+
+Saved to training_comparison/W5.json

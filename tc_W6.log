@@ -1,0 +1,20 @@
+
+LESR-PPO: state_dim=129, feature_dim=9
+<llm_code>:23: RuntimeWarning: invalid value encountered in divide
+    Ep 10/50: reward=-11.7673, sharpe=-0.724
+    Ep 20/50: reward=-12.7272, sharpe=-0.673
+    Ep 30/50: reward=-17.9952, sharpe=-0.647
+    Ep 40/50: reward=-2.6246, sharpe=-0.621
+    Ep 50/50: reward=0.7404, sharpe=-0.621
+LESR-PPO done: Sharpe=-0.621, Return=-13.15%
+
+Baseline-PPO
+  state_dim=70
+    Ep 10/50: reward=-12.1947, sharpe=-0.813
+    Ep 20/50: reward=-7.1816, sharpe=-0.791
+    Ep 30/50: reward=-22.8510, sharpe=-0.783
+    Ep 40/50: reward=-19.8186, sharpe=-0.774
+    Ep 50/50: reward=-12.6887, sharpe=-0.769
+Baseline done: Sharpe=-0.769, Return=-25.06%
+
+Saved to training_comparison/W6.json

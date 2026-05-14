@@ -1,0 +1,97 @@
+<llm_code>:18: RuntimeWarning: invalid value encountered in divide
+<llm_code>:18: RuntimeWarning: invalid value encountered in divide
+
+################################################################################
+# W1
+################################################################################
+
+  --- LESR-PPO (W1, seed=123) ---
+  LESR-PPO: state_dim=109, feature_dim=9
+    Ep 10/50: reward=-8.6431, sharpe=1.131, time=43.4s
+    Ep 20/50: reward=-3.5681, sharpe=1.220, time=85.5s
+    Ep 30/50: reward=0.4724, sharpe=1.244, time=133.5s
+    Ep 40/50: reward=4.3181, sharpe=1.249, time=179.5s
+    Ep 50/50: reward=6.3068, sharpe=1.250, time=227.0s
+
+  --- Baseline-PPO (W1, seed=123) ---
+  Baseline-PPO: state_dim=70
+    Ep 10/50: reward=-1.4252, sharpe=1.240, time=49.7s
+    Ep 20/50: reward=-0.3858, sharpe=1.260, time=104.0s
+    Ep 30/50: reward=-0.5139, sharpe=1.304, time=158.9s
+    Ep 40/50: reward=-0.0626, sharpe=1.327, time=216.5s
+    Ep 50/50: reward=-0.3560, sharpe=1.373, time=276.9s
+
+Generating plots...
+
+Plots saved to training_comparison_W1
+
+Generating report...
+================================================================================
+TRAINING CHARACTERISTICS COMPARISON: LESR-PPO vs Baseline-PPO
+Generated: 2026-04-26 00:07:24
+Episodes per run: 50
+================================================================================
+
+────────────────────────────────────────────────────────────────────────────────
+  W1
+────────────────────────────────────────────────────────────────────────────────
+
+  LESR:
+    Final Sharpe:    1.250
+    Final Return:    69.52%
+    Final MDD:       32.13%
+    Final Sortino:   1.194
+    Convergence Ep:  17/50 (34%)
+    Reward Stability (std): 1.7802
+    Reward Improvement:     15.7803
+    Best Ep Reward:  6.3068
+    Worst Ep Reward: -14.7293
+    Total Time:      227.0s
+    Avg Time/Ep:     4.54s
+
+  BASELINE:
+    Final Sharpe:    1.373
+    Final Return:    82.45%
+    Final MDD:       39.27%
+    Final Sortino:   1.368
+    Convergence Ep:  31/50 (62%)
+    Reward Stability (std): 0.9090
+    Reward Improvement:     -0.1490
+    Best Ep Reward:  0.1107
+    Worst Ep Reward: -4.2058
+    Total Time:      276.9s
+    Avg Time/Ep:     5.54s
+
+  COMPARISON:
+    Sharpe:   LESR=1.250 vs Base=1.373 (diff=-0.123)
+    Return:   LESR=69.52% vs Base=82.45% (diff=-12.93%)
+    Converge: LESR=17ep vs Base=31ep (LESR faster)
+    Stability: LESR=1.7802 vs Base=0.9090 (LESR less stable)
+
+================================================================================
+  AGGREGATE SUMMARY (1 windows)
+================================================================================
+
+  Final Sharpe:
+  LESR-PPO : mean=1.250, std=0.000, min=1.250, max=1.250
+  Baseline  : mean=1.373, std=0.000, min=1.373, max=1.373
+
+  Final Return (%):
+  LESR-PPO : mean=69.525, std=0.000, min=69.525, max=69.525
+  Baseline  : mean=82.453, std=0.000, min=82.453, max=82.453
+
+  Convergence Episode:
+  LESR-PPO : mean=17.000, std=0.000, min=17.000, max=17.000
+  Baseline  : mean=31.000, std=0.000, min=31.000, max=31.000
+
+  Reward Stability (lower=better):
+  LESR-PPO : mean=1.780, std=0.000, min=1.780, max=1.780
+  Baseline  : mean=0.909, std=0.000, min=0.909, max=0.909
+
+  Training Time (s):
+  LESR-PPO : mean=226.987, std=0.000, min=226.987, max=226.987
+  Baseline  : mean=276.906, std=0.000, min=276.906, max=276.906
+
+  LESR-PPO Wins: Sharpe 0/1, Return 0/1, Convergence 1/1, Stability 0/1
+
+All results saved to training_comparison_W1
